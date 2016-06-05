@@ -1,3 +1,5 @@
+/// Elena Guzman Blanco
+
 // Cambiando un parrafo
 function miNombre()
 {
@@ -16,4 +18,9 @@ function nuevoTitulo()
 function nombrePJ(name)
 {
 	document.getElementById("hora").innerHTML = name;
+}
+
+// Cambiando color de fondo
+function CambiarColorBG() {
+	document.body.style.backgroundColor = "darkslateblue";
 }
