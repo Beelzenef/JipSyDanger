@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title id="tit">Scripteando</title>
+	<script src="mec.js">
+	</script>
+</head>
+<body>
+
+<h1>Practicando con scripts</h1>
+	<p id="hora"> Mostrador de hora... </p>
+
+	<br>
+	<br>
+<button onclick="window.alert('LOL')"> Mostrando alerta... </button>
+	<br>
+	<br>
+<button onclick="document.getElementById('hora').innerHTML = Date()">Cambiando hora...</button>
+	<br>
+	<br>
+<button onclick="document.getElementById('hora').innerHTML = Math.floor(Math.random() * 10 + 1)">Devolviendo un aleatorio</button>
+	<br>
+	<br>
+<button onclick="miNombre()">Funcion propia</button>
+	<br>
+	<br>
+<button onclick="nuevoTitulo()">Nuevo titulo</button>
+	<br>
+	<br>
+<form>
+	<p>¿Quieres jugar? Dame tu nombre: </p>
+	<input id="nombre" type="text"/>
+	<input type="submit" value="yep" onclick="nombrePJ(document.getElementById('nombre').value)"/>
+
+</form>
+
+</body>
+</html>
