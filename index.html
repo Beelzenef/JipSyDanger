@@ -44,6 +44,16 @@
 	<input id="nombre" type="text"/>
 	<input type="submit" value="yep" onclick="nombrePJ(document.getElementById('nombre').value)"/>
 
+<h3> Generando opciones </h3>
+<select>
+	<?php
+		for ($i = 0; $i < 5; $i ++)
+		{
+			echo "<option> Opcion {$i} </option>";
+		}
+	?>
+</select>
+
 </form>
 
 </body>
