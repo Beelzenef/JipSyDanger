@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Practica con CANVAS</title>
+    <style type="text/css">
+        canvas {
+            border:solid;
+        }
+    </style>
+</head>
+<body>
+    
+    <canvas id="canvas">Canvas no soportado</canvas>
+    <script>
+        window.addEventListener('load', init)
+        function init()
+        {
+            var unCanvas = document.getElementById('canvas');
+            var contexto = unCanvas.getContext('2d');
+            contexto.fillRect(10, 10, 20, 20);
+            window.alert("Cargado");
+        }
+        </script>
+
+</body>
+</html>
