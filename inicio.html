@@ -2,24 +2,33 @@
 <head>
     <title>Practica con CANVAS</title>
     <style type="text/css">
+        body {
+            background-color: black;
+        }
         canvas {
             border:solid;
+            border-color: white;
+        }
+        h3 {
+            color: white;
         }
     </style>
-</head>
-<body>
-    
-    <canvas id="canvas">Canvas no soportado</canvas>
     <script>
         window.addEventListener('load', init)
         function init()
         {
             var unCanvas = document.getElementById('canvas');
             var contexto = unCanvas.getContext('2d');
+            
+            // Dibujando
+            var colorRojo = "#FF0000";
+            contexto.fillStyle = colorRojo;
             contexto.fillRect(10, 10, 20, 20);
-            window.alert("Cargado");
-        }
-        </script>
-
+        }    
+    </script>
+</head>
+<body>
+    <h3> Practicando Canvas </h3>
+    <canvas id="canvas">Canvas no soportado</canvas>
 </body>
 </html>
