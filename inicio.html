@@ -14,8 +14,8 @@
         }
     </style>
     <script>
-        window.addEventListener('load', init)
-        function init()
+        window.addEventListener('load', inicio)
+        function inicio()
         {
             var unCanvas = document.getElementById('canvas');
             var contexto = unCanvas.getContext('2d');
@@ -24,11 +24,16 @@
             var colorRojo = "#FF0000";
             contexto.fillStyle = colorRojo;
             contexto.fillRect(10, 10, 20, 20);
+            
+            // Probando imagen
+            var unaImagen = document.getElementById("imagen1");
+            contexto.drawImage(unaImagen, 30, 30);
         }    
     </script>
 </head>
 <body>
     <h3> Practicando Canvas </h3>
     <canvas id="canvas">Canvas no soportado</canvas>
+    <img id="imagen1" src="rasmus.png"/>
 </body>
 </html>
