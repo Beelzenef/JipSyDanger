@@ -8,6 +8,9 @@
         canvas {
             border:solid;
             border-color: white;
+            padding: 0;
+            margin: auto;
+            display: block;
         }
         h3 {
             color: white;
@@ -18,6 +21,8 @@
         function inicio()
         {
             var unCanvas = document.getElementById('canvas');
+            unCanvas.width = 500;
+            unCanvas.height = 500;
             var contexto = unCanvas.getContext('2d');
             
             // Dibujando
