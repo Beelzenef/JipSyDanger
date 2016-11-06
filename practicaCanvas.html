@@ -8,6 +8,7 @@
         canvas {
             border:solid;
             border-color: white;
+            /* Centrando canvas */
             padding: 0;
             margin: auto;
             display: block;
@@ -21,8 +22,10 @@
         function inicio()
         {
             var unCanvas = document.getElementById('canvas');
+            // Modificando ancho/alto
             unCanvas.width = 500;
             unCanvas.height = 500;
+            
             var contexto = unCanvas.getContext('2d');
             
             // Dibujando
@@ -40,5 +43,6 @@
     <h3> Practicando Canvas </h3>
     <canvas id="canvas">Canvas no soportado</canvas>
     <img id="imagen1" src="rasmus.png"/>
+    <a href="index.html"><button type="button">Pagina inicial</button></a>
 </body>
 </html>
