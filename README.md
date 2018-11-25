@@ -1,2 +1,2 @@
 # JipSyDanger
-practicando con JS
+practicando con JS y TS
